@@ -17,7 +17,7 @@
         }
     },
     "require": {
-        "becklyn/gluggi": "~1.0"
+        "becklyn/gluggi": "~1.0, >=1.0-rc"
     },
     "scripts": {
         "post-install-cmd": [
