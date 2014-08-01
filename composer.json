@@ -11,13 +11,8 @@
             "homepage": "http://becklyn.com/"
         }
     ],
-    "autoload": {
-        "psr-4": {
-            "BecklynLayout\\": "src/"
-        }
-    },
     "require": {
-        "becklyn/gluggi": "~1.0, >=1.0-rc"
+        "becklyn/gluggi": "~1.0"
     },
     "scripts": {
         "post-install-cmd": [
@@ -26,5 +21,6 @@
         "post-update-cmd": [
             "BecklynLayout\\Composer\\ScriptHandler::installAssets"
         ]
-    }
+    },
+    "minimum-stability": "rc"
 }
