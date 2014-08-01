@@ -1,0 +1,30 @@
+{
+    "name":         "becklyn/gluggi-app",
+    "description":  "A tool which helps with developing templates in isolation",
+    "keywords":     ["template"],
+    "type":         "app",
+    "homepage":     "https://github.com/Becklyn/Gluggi-App",
+    "license":      "BSD-3-Clause",
+    "authors": [
+        {
+            "name":     "Becklyn GmbH",
+            "homepage": "http://becklyn.com/"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "BecklynLayout\\": "src/"
+        }
+    },
+    "require": {
+        "becklyn/gluggi": "~1.0"
+    },
+    "scripts": {
+        "post-install-cmd": [
+            "BecklynLayout\\Composer\\ScriptHandler::installAssets"
+        ],
+        "post-update-cmd": [
+            "BecklynLayout\\Composer\\ScriptHandler::installAssets"
+        ]
+    }
+}
