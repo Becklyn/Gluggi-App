@@ -1,6 +1,6 @@
 {
     "name":         "becklyn/gluggi-app",
-    "description":  "A tool which helps with developing templates in isolation",
+    "description":  "Standalone runnable app which implements becklyn/gluggi",
     "keywords":     ["template"],
     "type":         "app",
     "homepage":     "https://github.com/Becklyn/Gluggi-App",
