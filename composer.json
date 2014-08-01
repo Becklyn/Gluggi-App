@@ -22,5 +22,5 @@
             "BecklynLayout\\Composer\\ScriptHandler::installAssets"
         ]
     },
-    "minimum-stability": "rc"
+    "minimum-stability": "RC"
 }
