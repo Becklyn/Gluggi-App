@@ -17,4 +17,4 @@ gulp.task("assets", ["css", "js"],
     }
 );
 
-gulp.task("default", ["css", "js", "assets"]);
+gulp.task("default", ["css", "js"]);
