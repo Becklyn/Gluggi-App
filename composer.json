@@ -12,15 +12,24 @@
         }
     ],
     "require": {
-        "becklyn/gluggi": "~1.0"
+        "becklyn/gluggi": "~1.0",
+        "symfony/yaml": "~2.5",
+        "incenteev/composer-parameter-handler": "~2.0"
     },
     "scripts": {
         "post-install-cmd": [
+            "Incenteev\\ParameterHandler\\ScriptHandler::buildParameters",
             "BecklynLayout\\Composer\\ScriptHandler::installAssets"
         ],
         "post-update-cmd": [
+            "Incenteev\\ParameterHandler\\ScriptHandler::buildParameters",
             "BecklynLayout\\Composer\\ScriptHandler::installAssets"
         ]
     },
-    "minimum-stability": "RC"
+    "minimum-stability": "RC",
+    "extra": {
+        "incenteev-parameters": {
+            "file": "app/config.yml"
+        }
+    }
 }

@@ -2,3 +2,4 @@ node_modules
 vendor
 web/core
 web/assets
+app/config.yml
