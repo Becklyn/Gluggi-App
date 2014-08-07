@@ -1,5 +1,6 @@
 var gulp    = require("gulp");
 var becklyn = require("becklyn-gulp");
+var fs      = require("fs");
 var isDebug = !!require("yargs").argv.debug || !!require("yargs").argv.dev;
 
 gulp.task("css", becklyn.scss("layout/assets/**/*.scss", isDebug));
