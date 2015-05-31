@@ -3,3 +3,5 @@ vendor
 web/core
 web/assets
 app/config.yml
+web/content
+web/assets
