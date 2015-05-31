@@ -1,20 +1,7 @@
 {
-    "private": true,
-    "browserify":      {
-        "transform": [
-            "browserify-shim"
-        ]
-    },
-    "browserify-shim": {
-        "jquery":  "global:$",
-        "routing": "global:Routing"
-    },
-    "devDependencies": {
-        "becklyn-gulp":    "^0.1.0",
-        "gulp":            "^3.8.6",
-        "browserify-shim": "^3.6.0",
-        "lodash":          "^2.4.1",
-        "q":               "^1.0.1",
-        "yargs":           "^1.3.1"
-    }
+  "private": true,
+  "devDependencies": {
+    "becklyn-gulp": "^1.1.0-alpha.1",
+    "gulp": "^3.8.11"
+  }
 }

@@ -1,10 +1,12 @@
+"use strict";
+
 var gulp    = require("gulp");
 var becklyn = require("becklyn-gulp");
 var fs      = require("fs");
-var isDebug = !!require("yargs").argv.debug || !!require("yargs").argv.dev;
 
-gulp.task("css", becklyn.scss("layout/assets/**/*.scss", isDebug));
-gulp.task("js",  becklyn.js("layout/assets/js/**/*.js", isDebug));
+var sassTask = becklyn.scss("layout/assets/scss/**/*.scss");
+var jsTask = becklyn.js_simple("layout/assets/js/*.js");
+
 
 gulp.task("link", ["css", "js"],
     function ()
@@ -26,4 +28,27 @@ gulp.task("link", ["css", "js"],
     }
 );
 
+gulp.task("css",
+    function ()
+    {
+        sassTask(false);
+    }
+);
+
+gulp.task("js",
+    function ()
+    {
+        jsTask(false);
+    }
+);
+
+gulp.task("dev",
+    function ()
+    {
+        sassTask(true);
+        jsTask(true);
+    }
+);
+
 gulp.task("default", ["css", "js"]);
+gulp.task("release", ["default"]);
