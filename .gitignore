@@ -1,5 +1,5 @@
 node_modules
-vendor
+/vendor
 web/core
 web/assets
 app/config.yml
