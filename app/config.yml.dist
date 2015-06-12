@@ -1,2 +1,3 @@
 parameters:
     title: "Gluggi"
+    base_template: "@core/base.twig"
