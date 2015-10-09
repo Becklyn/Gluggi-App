@@ -5,3 +5,5 @@ web/assets
 app/config.yml
 web/content
 web/assets
+layout/public/css
+layout/public/js
